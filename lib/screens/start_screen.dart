@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:road_mempany/screens/intro_screen.dart';
 
 import '../constants/colors.dart';
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class StartScreen extends StatefulWidget {
+  const StartScreen({Key? key}) : super(key: key);
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<StartScreen> createState() => _StartScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _StartScreenState extends State<StartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,8 +53,18 @@ class _MainScreenState extends State<MainScreen> {
               ],
             ),
             const Spacer(),
-            Image.asset(
-              'assets/images/start_button.png',
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const IntroScreen(),
+                  ),
+                );
+              },
+              child: Image.asset(
+                'assets/images/start_button.png',
+              ),
             ),
             const SizedBox(
               height: 108,
