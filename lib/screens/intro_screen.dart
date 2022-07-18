@@ -421,163 +421,206 @@ class _IntroScreenState extends State<IntroScreen> {
   }
 
   Widget _buildIntro3() {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(16, 170, 16, 78),
-      color: const Color(0xfff2f4f5),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            'MEMPANY-PAY',
-            style: GoogleFonts.roboto(
-              textStyle: const TextStyle(
-                fontSize: 46,
-                color: Color(0xe8052f75),
-                letterSpacing: -2.3000000000000003,
-                fontWeight: FontWeight.w900,
-              ),
-            ),
-            textAlign: TextAlign.center,
-            softWrap: false,
-          ),
-          const SizedBox(
-            height: 53,
-          ),
-          Image.asset(
-            'assets/images/intro3-1.png',
-          ),
-          const SizedBox(
-            height: 27,
-          ),
-          Text(
-            '멤퍼니 페이',
-            style: GoogleFonts.notoSans(
-              textStyle: const TextStyle(
-                fontSize: 22,
-                color: Color(0xff052f75),
-                letterSpacing: -1.1,
-                height: 1.5,
-              ),
-            ),
-            textHeightBehavior:
-                const TextHeightBehavior(applyHeightToFirstAscent: false),
-            softWrap: false,
-          ),
-          const Spacer(),
-          Text(
-            '온·오프라인 글로벌 마켓,\n돈처럼 쓰는 포인트(멤머니)',
-            style: GoogleFonts.notoSans(
-              textStyle: const TextStyle(
-                fontFamily: 'Noto Sans CJK KR',
-                fontSize: 22,
-                color: Color(0xff191919),
-                letterSpacing: -1.1,
-                height: 1.3636363636363635,
-              ),
-            ),
-            textHeightBehavior:
-                const TextHeightBehavior(applyHeightToFirstAscent: false),
-            textAlign: TextAlign.center,
-            softWrap: false,
-          ),
-          const SizedBox(
-            height: 57,
-          ),
-          Row(
+    return Stack(
+      children: [
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.fromLTRB(16, 170, 16, 78),
+          color: const Color(0xfff2f4f5),
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(
-                      5,
-                    ),
-                  ),
-                  border: Border.all(
-                    width: 1,
-                    color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
+              Text(
+                'MEMPANY-PAY',
+                style: GoogleFonts.roboto(
+                  textStyle: const TextStyle(
+                    fontSize: 46,
+                    color: Color(0xe8052f75),
+                    letterSpacing: -2.3000000000000003,
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
+                textAlign: TextAlign.center,
+                softWrap: false,
               ),
               const SizedBox(
-                width: 8,
+                height: 53,
               ),
-              Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(
-                      5,
-                    ),
-                  ),
-                  border: Border.all(
-                    width: 1,
-                    color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
-                  ),
-                ),
+              Image.asset(
+                'assets/images/intro3-1.png',
               ),
               const SizedBox(
-                width: 8,
+                height: 27,
               ),
-              Container(
-                width: 10,
-                height: 10,
-                decoration: const BoxDecoration(
-                  color: Color.fromRGBO(0x19, 0x4c, 0xa0, 1),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(
-                      5,
-                    ),
+              Text(
+                '멤퍼니 페이',
+                style: GoogleFonts.notoSans(
+                  textStyle: const TextStyle(
+                    fontSize: 22,
+                    color: Color(0xff052f75),
+                    letterSpacing: -1.1,
+                    height: 1.5,
                   ),
                 ),
+                textHeightBehavior:
+                    const TextHeightBehavior(applyHeightToFirstAscent: false),
+                softWrap: false,
+              ),
+              const Spacer(),
+              Text(
+                '온·오프라인 글로벌 마켓,\n돈처럼 쓰는 포인트(멤머니)',
+                style: GoogleFonts.notoSans(
+                  textStyle: const TextStyle(
+                    fontFamily: 'Noto Sans CJK KR',
+                    fontSize: 22,
+                    color: Color(0xff191919),
+                    letterSpacing: -1.1,
+                    height: 1.3636363636363635,
+                  ),
+                ),
+                textHeightBehavior:
+                    const TextHeightBehavior(applyHeightToFirstAscent: false),
+                textAlign: TextAlign.center,
+                softWrap: false,
               ),
               const SizedBox(
-                width: 8,
+                height: 57,
               ),
-              Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(
-                      5,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(
+                          5,
+                        ),
+                      ),
+                      border: Border.all(
+                        width: 1,
+                        color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
+                      ),
                     ),
                   ),
-                  border: Border.all(
-                    width: 1,
-                    color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
+                  const SizedBox(
+                    width: 8,
                   ),
-                ),
-              ),
-              const SizedBox(
-                width: 8,
-              ),
-              Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(
-                      5,
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(
+                          5,
+                        ),
+                      ),
+                      border: Border.all(
+                        width: 1,
+                        color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
+                      ),
                     ),
                   ),
-                  border: Border.all(
-                    width: 1,
-                    color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
+                  const SizedBox(
+                    width: 8,
                   ),
-                ),
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: const BoxDecoration(
+                      color: Color.fromRGBO(0x19, 0x4c, 0xa0, 1),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(
+                          5,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(
+                          5,
+                        ),
+                      ),
+                      border: Border.all(
+                        width: 1,
+                        color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(
+                          5,
+                        ),
+                      ),
+                      border: Border.all(
+                        width: 1,
+                        color: const Color.fromRGBO(0x76, 0x9d, 0xdd, 1),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-        ],
-      ),
+        ),
+        Container(
+          padding: const EdgeInsets.only(
+            bottom: 20,
+          ),
+          alignment: Alignment.centerRight,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              const Spacer(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Image.asset(
+                    'assets/images/intro3-2.png',
+                  ),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  Container(
+                    width: 38,
+                    height: 4,
+                    color: const Color(0xffd91226),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 4,
+              ),
+              Container(
+                width: 90,
+                height: 4,
+                color: const Color(0xff194ca0),
+              )
+            ],
+          ),
+        ),
+      ],
     );
   }
 
