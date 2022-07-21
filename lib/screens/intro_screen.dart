@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:road_mempany/constants/fonts.dart';
+import 'package:road_mempany/screens/agree_screen.dart';
 
 import '../constants/colors.dart';
 import '../utils/util.dart';
@@ -912,12 +913,22 @@ class _IntroScreenState extends State<IntroScreen> {
                     ),
                   ],
                 ),
-                Container(
-                  width: 48,
-                  height: 44,
-                  alignment: Alignment.centerRight,
-                  child: SvgPicture.asset(
-                    'assets/icons/arrow-right.svg',
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AgreeScreen(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    width: 48,
+                    height: 44,
+                    alignment: Alignment.centerRight,
+                    child: SvgPicture.asset(
+                      'assets/icons/arrow-right.svg',
+                    ),
                   ),
                 ),
               ],
