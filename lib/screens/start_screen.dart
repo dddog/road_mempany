@@ -20,7 +20,7 @@ class _StartScreenState extends State<StartScreen> {
     _height = getMediaSafeHeight(context);
 
     return Scaffold(
-      backgroundColor: kColorBackground,
+      backgroundColor: kColorBlue10,
       body: SafeArea(
         child: Center(
           child: Column(

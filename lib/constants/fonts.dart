@@ -21,6 +21,14 @@ TextStyle kTsRoboto12 = GoogleFonts.roboto(
   ),
 );
 
+TextStyle kTsRoboto18 = GoogleFonts.roboto(
+  textStyle: const TextStyle(
+    fontSize: 18.0,
+    fontWeight: FontWeight.w300,
+    height: 1.22,
+  ),
+);
+
 TextStyle kTsRoboto22 = GoogleFonts.roboto(
   textStyle: const TextStyle(
     fontSize: 22,
@@ -37,6 +45,16 @@ TextStyle kTsRoboto36 = GoogleFonts.roboto(
     fontWeight: FontWeight.w700,
     height: 1.19,
     color: kColorBlue9,
+  ),
+);
+
+TextStyle kTsRoboto46 = GoogleFonts.roboto(
+  textStyle: const TextStyle(
+    fontSize: 46.0,
+    letterSpacing: -2.3000000000000003,
+    fontWeight: FontWeight.w900,
+    height: 1.15,
+    color: kColorBlue10,
   ),
 );
 
