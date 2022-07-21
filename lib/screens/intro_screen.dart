@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:road_mempany/constants/fonts.dart';
 
 import '../constants/colors.dart';
 
@@ -63,14 +64,7 @@ class _IntroScreenState extends State<IntroScreen> {
               children: [
                 Text(
                   'The \nCryptocurrency\nof Mempany',
-                  style: GoogleFonts.roboto(
-                    textStyle: const TextStyle(
-                      fontSize: 22,
-                      color: Color(0xff194ca0),
-                      fontWeight: FontWeight.w300,
-                      height: 1,
-                    ),
-                  ),
+                  style: kTsRoboto22,
                   textHeightBehavior:
                       const TextHeightBehavior(applyHeightToFirstAscent: false),
                   textAlign: TextAlign.right,
@@ -78,15 +72,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 ),
                 Text(
                   'MCT / MEMBERS',
-                  style: GoogleFonts.roboto(
-                    textStyle: const TextStyle(
-                      fontSize: 36,
-                      color: Color(0xff194ca0),
-                      letterSpacing: -1.08,
-                      fontWeight: FontWeight.w700,
-                      height: 1.3888888888888888,
-                    ),
-                  ),
+                  style: kTsRoboto36,
                   textHeightBehavior:
                       const TextHeightBehavior(applyHeightToFirstAscent: false),
                   textAlign: TextAlign.right,
@@ -94,15 +80,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 ),
                 Text(
                   '멤퍼니 가상화폐',
-                  style: GoogleFonts.notoSans(
-                    textStyle: const TextStyle(
-                      fontSize: 26,
-                      color: Color(0xff769ddd),
-                      letterSpacing: -1.3,
-                      fontWeight: FontWeight.w300,
-                      height: 1.2692307692307692,
-                    ),
-                  ),
+                  style: kTsNoto26,
                   textHeightBehavior:
                       const TextHeightBehavior(applyHeightToFirstAscent: false),
                   textAlign: TextAlign.right,
@@ -120,15 +98,7 @@ class _IntroScreenState extends State<IntroScreen> {
           ),
           Text(
             '포인트의 현물화 실현,\n토큰의 글로벌 서비스 결제',
-            style: GoogleFonts.notoSans(
-              textStyle: const TextStyle(
-                fontSize: 22,
-                color: Color(0xfff2f4f5),
-                letterSpacing: -1.1,
-                fontWeight: FontWeight.w300,
-                height: 1.3636363636363635,
-              ),
-            ),
+            style: kTsNoto22,
             textHeightBehavior:
                 const TextHeightBehavior(applyHeightToFirstAscent: false),
             textAlign: TextAlign.center,

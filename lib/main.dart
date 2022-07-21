@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:road_mempany/screens/main_screen.dart';
-
 import 'screens/start_screen.dart';
 
 void main() {
