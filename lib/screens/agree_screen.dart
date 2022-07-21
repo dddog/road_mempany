@@ -37,6 +37,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
       _is5 = _isAll;
       _is6 = _isAll;
     });
+    _isAllCheck();
   }
 
   _isAllCheck() {
