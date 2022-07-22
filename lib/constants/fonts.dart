@@ -76,6 +76,13 @@ TextStyle kTsNoto22 = GoogleFonts.notoSans(
     color: kColorWhite9,
   ),
 );
+TextStyle kTsNoto20 = GoogleFonts.notoSans(
+  textStyle: const TextStyle(
+    fontSize: 20.0,
+    letterSpacing: -0.8,
+    fontWeight: FontWeight.w500,
+  ),
+);
 
 TextStyle kTsNoto18 = GoogleFonts.notoSans(
   textStyle: const TextStyle(
@@ -92,6 +99,13 @@ TextStyle kTsNoto16 = GoogleFonts.notoSans(
     color: kColorBlack10,
     letterSpacing: -0.64,
     height: 1.44,
+  ),
+);
+TextStyle kTsNoto17 = GoogleFonts.notoSans(
+  textStyle: const TextStyle(
+    fontSize: 17.0,
+    letterSpacing: -0.68,
+    height: 1.41,
   ),
 );
 

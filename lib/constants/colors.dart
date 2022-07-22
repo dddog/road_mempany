@@ -24,3 +24,5 @@ const Color kColorGreen9 = Color(0xff75A094);
 const Color kColorWhite99 = Color(0xffEFEFEF);
 // 3478F6
 const Color kColorBlue8 = Color(0xff3478F6);
+// FBE06F
+const Color kColorYellow8 = Color(0xffFBE06F);
