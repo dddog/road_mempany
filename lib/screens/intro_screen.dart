@@ -105,7 +105,7 @@ class _IntroScreenState extends State<IntroScreen> {
             ),
             const Spacer(),
             Image.asset(
-              'assets/images/intro1.png',
+              'assets/images/logo-circle.png',
               width: 110,
               height: 110,
             ),
