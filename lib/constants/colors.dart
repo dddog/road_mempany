@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 // 052F75
 const Color kColorBlue10 = Color(0xff052F75);
-const Color kColorTextWhite = Color.fromRGBO(0xf2, 0xf4, 0xf5, 1);
-
 // 769DDD
 const Color kColorBlue6 = Color(0xff769DDD);
 // 194CA0

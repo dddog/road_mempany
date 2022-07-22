@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:road_mempany/constants/fonts.dart';
 import 'package:road_mempany/screens/agree_detail_screen.dart';
+import 'package:road_mempany/screens/mnemonic/mnemonic_start_screen.dart';
 import 'package:road_mempany/utils/widget_util.dart';
 import 'package:road_mempany/widgets/disable_button.dart';
 import 'package:road_mempany/widgets/enable_button.dart';
@@ -133,7 +134,20 @@ class _AgreeScreenState extends State<AgreeScreen> {
                             ),
                           ),
                           _isButton
-                              ? const EnableButton(text: '약관 동의하기')
+                              ? GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            const MnemonicStartScreen(),
+                                      ),
+                                    );
+                                  },
+                                  child: const EnableButton(
+                                    text: '약관 동의하기',
+                                  ),
+                                )
                               : const DisableButton(
                                   text: '약관 동의하기',
                                 ),

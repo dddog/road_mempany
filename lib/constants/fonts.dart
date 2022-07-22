@@ -47,6 +47,13 @@ TextStyle kTsRoboto36 = GoogleFonts.roboto(
     color: kColorBlue9,
   ),
 );
+TextStyle kTsRoboto20 = GoogleFonts.roboto(
+  textStyle: const TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.w300,
+    height: 1.1,
+  ),
+);
 
 TextStyle kTsRoboto46 = GoogleFonts.roboto(
   textStyle: const TextStyle(
