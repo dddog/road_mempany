@@ -58,62 +58,49 @@ TextStyle kTsRoboto46 = GoogleFonts.roboto(
   ),
 );
 
-TextStyle kTsNoto26 = GoogleFonts.notoSans(
-  textStyle: const TextStyle(
-    fontSize: 26.0,
-    letterSpacing: -1.04,
-    fontWeight: FontWeight.w300,
-    height: 1.27,
-    color: kColorBlue6,
-  ),
+TextStyle kTsNoto26 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR-Lignt',
+  fontSize: 26.0,
+  letterSpacing: -1.04,
+  height: 1.27,
 );
 
-TextStyle kTsNoto22 = GoogleFonts.notoSans(
-  textStyle: const TextStyle(
-    fontSize: 22.0,
-    letterSpacing: -0.88,
-    height: 1.32,
-    color: kColorWhite9,
-  ),
+TextStyle kTsNoto22 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR',
+  fontSize: 22.0,
+  letterSpacing: -0.88,
+  height: 1.32,
 );
-TextStyle kTsNoto20 = GoogleFonts.notoSans(
-  textStyle: const TextStyle(
-    fontSize: 20.0,
-    letterSpacing: -0.8,
-    fontWeight: FontWeight.w500,
-  ),
+TextStyle kTsNoto20 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR',
+  fontSize: 20.0,
+  letterSpacing: -0.8,
 );
 
-TextStyle kTsNoto18 = GoogleFonts.notoSans(
-  textStyle: const TextStyle(
-    fontSize: 18.0,
-    color: kColorBlack7,
-    letterSpacing: -0.9,
-    height: 1.22,
-  ),
+TextStyle kTsNoto18 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR',
+  fontSize: 18.0,
+  color: kColorBlack7,
+  letterSpacing: -0.9,
+  height: 1.22,
 );
 
-TextStyle kTsNoto16 = GoogleFonts.notoSans(
-  textStyle: const TextStyle(
-    fontSize: 16.0,
-    color: kColorBlack10,
-    letterSpacing: -0.64,
-    height: 1.44,
-  ),
+TextStyle kTsNoto16 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR',
+  fontSize: 16.0,
+  letterSpacing: -0.64,
+  height: 1.44,
 );
-TextStyle kTsNoto17 = GoogleFonts.notoSans(
-  textStyle: const TextStyle(
-    fontSize: 17.0,
-    letterSpacing: -0.68,
-    height: 1.41,
-  ),
+TextStyle kTsNoto17 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR-Medium',
+  fontSize: 17.0,
+  letterSpacing: -0.68,
+  height: 1.41,
 );
 
-TextStyle kTsNoto14 = GoogleFonts.notoSans(
-  textStyle: const TextStyle(
-    fontSize: 14.0,
-    letterSpacing: -0.7000000000000001,
-    fontWeight: FontWeight.w500,
-    height: 1.79,
-  ),
+TextStyle kTsNoto14 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR',
+  fontSize: 14.0,
+  letterSpacing: -0.7000000000000001,
+  height: 1.79,
 );

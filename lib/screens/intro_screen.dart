@@ -92,7 +92,9 @@ class _IntroScreenState extends State<IntroScreen> {
                   ),
                   Text(
                     '멤퍼니 가상화폐',
-                    style: kTsNoto26,
+                    style: kTsNoto26.copyWith(
+                      color: kColorBlue6,
+                    ),
                     textHeightBehavior: const TextHeightBehavior(
                         applyHeightToFirstAscent: false),
                     textAlign: TextAlign.right,
@@ -112,7 +114,9 @@ class _IntroScreenState extends State<IntroScreen> {
             ),
             Text(
               '포인트의 현물화 실현,\n토큰의 글로벌 서비스 결제',
-              style: kTsNoto22,
+              style: kTsNoto22.copyWith(
+                color: kColorWhite9,
+              ),
               textHeightBehavior:
                   const TextHeightBehavior(applyHeightToFirstAscent: false),
               textAlign: TextAlign.center,
@@ -256,7 +260,9 @@ class _IntroScreenState extends State<IntroScreen> {
                   ),
                   Text(
                     '스몰데이터 생산 시스템',
-                    style: kTsNoto26,
+                    style: kTsNoto26.copyWith(
+                      color: kColorBlue6,
+                    ),
                     textHeightBehavior: const TextHeightBehavior(
                         applyHeightToFirstAscent: false),
                     textAlign: TextAlign.right,
@@ -917,7 +923,7 @@ class _IntroScreenState extends State<IntroScreen> {
                     ),
                   ],
                 ),
-                InkWell(
+                GestureDetector(
                   onTap: () {
                     Navigator.push(
                       context,

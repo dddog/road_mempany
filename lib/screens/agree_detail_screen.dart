@@ -145,7 +145,7 @@ class _AgreeDetailScreenState extends State<AgreeDetailScreen> {
   Column _buildTitle(int index, String title) {
     return Column(
       children: [
-        InkWell(
+        GestureDetector(
           onTap: () {
             _onSelected(index);
           },
@@ -188,7 +188,7 @@ class _AgreeDetailScreenState extends State<AgreeDetailScreen> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        InkWell(
+        GestureDetector(
           onTap: () {
             Navigator.pop(context);
           },

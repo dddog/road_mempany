@@ -68,7 +68,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   Navigator.pop(context);
                 },
@@ -107,7 +107,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
                         children: [
                           _buildContent(),
                           // 전체 약관에 동의
-                          InkWell(
+                          GestureDetector(
                             onTap: _selectedAll,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -125,7 +125,9 @@ class _AgreeScreenState extends State<AgreeScreen> {
                                 ),
                                 Text(
                                   '전체 약관에 동의합니다.',
-                                  style: kTsNoto16,
+                                  style: kTsNoto16.copyWith(
+                                    color: kColorBlack10,
+                                  ),
                                 ),
                               ],
                             ),
@@ -168,7 +170,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
         children: [
           Row(
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   setState(() {
                     _is1 = !_is1;
@@ -195,7 +197,9 @@ class _AgreeScreenState extends State<AgreeScreen> {
                     ),
                     Text(
                       '서비스 이용약관 (필수)',
-                      style: kTsNoto16,
+                      style: kTsNoto16.copyWith(
+                        color: kColorBlack10,
+                      ),
                     ),
                   ],
                 ),
@@ -210,7 +214,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
 
           Row(
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   setState(() {
                     _is2 = !_is2;
@@ -237,7 +241,9 @@ class _AgreeScreenState extends State<AgreeScreen> {
                     ),
                     Text(
                       '개인정보 처리방침 (필수)',
-                      style: kTsNoto16,
+                      style: kTsNoto16.copyWith(
+                        color: kColorBlack10,
+                      ),
                     ),
                   ],
                 ),
@@ -252,7 +258,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
 
           Row(
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   setState(() {
                     _is3 = !_is3;
@@ -279,7 +285,9 @@ class _AgreeScreenState extends State<AgreeScreen> {
                     ),
                     Text(
                       '전자상거래 약관 (필수)',
-                      style: kTsNoto16,
+                      style: kTsNoto16.copyWith(
+                        color: kColorBlack10,
+                      ),
                     ),
                   ],
                 ),
@@ -294,7 +302,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
 
           Row(
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   setState(() {
                     _is4 = !_is4;
@@ -321,7 +329,9 @@ class _AgreeScreenState extends State<AgreeScreen> {
                     ),
                     Text(
                       '전자금융 거래약관 (필수)',
-                      style: kTsNoto16,
+                      style: kTsNoto16.copyWith(
+                        color: kColorBlack10,
+                      ),
                     ),
                   ],
                 ),
@@ -336,7 +346,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
 
           Row(
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   setState(() {
                     _is5 = !_is5;
@@ -363,7 +373,9 @@ class _AgreeScreenState extends State<AgreeScreen> {
                     ),
                     Text(
                       '광고수신 동의 (선택)',
-                      style: kTsNoto16,
+                      style: kTsNoto16.copyWith(
+                        color: kColorBlack10,
+                      ),
                     ),
                   ],
                 ),
@@ -381,7 +393,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   setState(() {
                     _is6 = !_is6;
@@ -409,14 +421,16 @@ class _AgreeScreenState extends State<AgreeScreen> {
                     ),
                     Text(
                       '마케팅 정보 수신 동의 (선택)',
-                      style: kTsNoto16,
+                      style: kTsNoto16.copyWith(
+                        color: kColorBlack10,
+                      ),
                     ),
                   ],
                 ),
               ),
 
               // 전체약관
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   Navigator.push(
                     context,
