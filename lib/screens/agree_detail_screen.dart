@@ -30,7 +30,6 @@ class _AgreeDetailScreenState extends State<AgreeDetailScreen> {
   void initState() {
     super.initState();
     _scrollController.addListener(() {
-      log(_scrollController.offset.toString());
       if (_scrollController.position.userScrollDirection ==
           ScrollDirection.forward) {
         if (!_isTitleView) {
@@ -51,6 +50,9 @@ class _AgreeDetailScreenState extends State<AgreeDetailScreen> {
 
   _onSelected(int index) {
     setState(() {
+      if (index != _currentIndex) {
+        _scrollController.jumpTo(0);
+      }
       _currentIndex = index;
     });
   }
@@ -203,7 +205,7 @@ class _AgreeDetailScreenState extends State<AgreeDetailScreen> {
           ),
         ),
         Text(
-          '서비스 이용 약관',
+          _titleList[_currentIndex],
           style: kTsNoto20.copyWith(
             color: kColorBlack9,
           ),

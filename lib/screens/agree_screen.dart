@@ -94,9 +94,7 @@ class _AgreeScreenState extends State<AgreeScreen> {
                       height: _height * 0.0446,
                     ),
                     Center(
-                      child: Image.asset(
-                        'assets/images/logo-blue.png',
-                      ),
+                      child: SvgPicture.asset('assets/icons/logo-blue.svg'),
                     ),
                     SizedBox(
                       height: _height * 0.1308,

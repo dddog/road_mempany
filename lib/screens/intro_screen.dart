@@ -104,6 +104,8 @@ class _IntroScreenState extends State<IntroScreen> {
             const Spacer(),
             Image.asset(
               'assets/images/intro1.png',
+              width: 110,
+              height: 110,
             ),
             SizedBox(
               height: _height * 0.0580,
@@ -531,6 +533,8 @@ class _IntroScreenState extends State<IntroScreen> {
                 children: [
                   Image.asset(
                     'assets/images/intro3-2.png',
+                    width: 48,
+                    height: 48,
                   ),
                   const SizedBox(
                     width: 4,

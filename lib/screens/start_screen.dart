@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:road_mempany/screens/intro_screen.dart';
 import 'package:road_mempany/utils/util.dart';
@@ -31,9 +32,7 @@ class _StartScreenState extends State<StartScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'assets/images/logo.png',
-                  ),
+                  SvgPicture.asset('assets/icons/logo-white.svg'),
                   const SizedBox(
                     height: 15,
                   ),
@@ -52,7 +51,7 @@ class _StartScreenState extends State<StartScreen> {
               SizedBox(
                 height: _height * 0.3995,
               ),
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   Navigator.push(
                     context,
@@ -61,8 +60,59 @@ class _StartScreenState extends State<StartScreen> {
                     ),
                   );
                 },
-                child: Image.asset(
-                  'assets/images/start_button.png',
+                child: Stack(
+                  alignment: Alignment.topCenter,
+                  children: [
+                    Container(
+                      width: 76.00,
+                      height: 76.00,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: kColorBlue6,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color(0xFF6699CC),
+                            offset: Offset(0, 14.0),
+                            blurRadius: 6.0,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Container(
+                          width: 86.0,
+                          height: 86.0,
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: kColorBlue10,
+                          ),
+                        ),
+                        Container(
+                          width: 64.0,
+                          height: 64.0,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              width: 1,
+                              color: kColorWhite9,
+                            ),
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(
+                                38,
+                              ),
+                            ),
+                          ),
+                          child: SvgPicture.asset(
+                            'assets/icons/start.svg',
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
               SizedBox(
