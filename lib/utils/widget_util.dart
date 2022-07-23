@@ -17,3 +17,18 @@ Route createUpDownRoute(Widget nextScreen) {
     },
   );
 }
+
+showSnackBar({
+  required String content,
+  int milliseconds = 1000,
+  required BuildContext context,
+}) {
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(
+      content: Text(content),
+      duration: Duration(
+        milliseconds: milliseconds,
+      ),
+    ),
+  );
+}

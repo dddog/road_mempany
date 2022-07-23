@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:road_mempany/constants/fonts.dart';
+import 'package:road_mempany/utils/widget_util.dart';
 import 'package:road_mempany/widgets/enable_button.dart';
 import 'package:road_mempany/widgets/sm_button.dart';
 
@@ -96,7 +98,22 @@ class _MnemonicCodeScreenState extends State<MnemonicCodeScreen> {
                           ),
                         ),
                       ),
-                      const SmButton(text: '복사하기'),
+                      GestureDetector(
+                        onTap: () {
+                          Clipboard.setData(
+                            ClipboardData(
+                              text: _codeList
+                                  .asMap()
+                                  .entries
+                                  .map((e) => '${e.key + 1}.${e.value}')
+                                  .toList()
+                                  .join(', '),
+                            ),
+                          );
+                          showSnackBar(content: '복사 완료', context: context);
+                        },
+                        child: const SmButton(text: '복사하기'),
+                      ),
                     ],
                   ),
                 ],
@@ -134,7 +151,9 @@ class _MnemonicCodeScreenState extends State<MnemonicCodeScreen> {
               ),
             ),
 
-            const Spacer(),
+            const Spacer(
+              flex: 2,
+            ),
 
             Container(
               padding: const EdgeInsets.symmetric(
@@ -153,16 +172,23 @@ class _MnemonicCodeScreenState extends State<MnemonicCodeScreen> {
             // SizedBox(
             //   height: _height * 0.0492,
             // ),
-            const Spacer(),
+            const Spacer(
+              flex: 1,
+            ),
 
-            const EnableButton(
-              text: '코드 백업하기',
+            GestureDetector(
+              onTap: () {},
+              child: const EnableButton(
+                text: '코드 백업하기',
+              ),
             ),
 
             // SizedBox(
             //   height: _height * 0.0704,
             // ),
-            const Spacer(),
+            const Spacer(
+              flex: 2,
+            ),
           ],
         ),
       ),
