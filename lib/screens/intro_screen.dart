@@ -280,7 +280,9 @@ class _IntroScreenState extends State<IntroScreen> {
             ),
             Text(
               '24시간을 비즈니스로!\n평범한 일상이 돈이 된다.',
-              style: kTsNoto22,
+              style: kTsNoto22.copyWith(
+                color: kColorWhite9,
+              ),
               textHeightBehavior:
                   const TextHeightBehavior(applyHeightToFirstAscent: false),
               textAlign: TextAlign.center,
