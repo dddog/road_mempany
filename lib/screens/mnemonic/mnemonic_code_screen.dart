@@ -150,17 +150,19 @@ class _MnemonicCodeScreenState extends State<MnemonicCodeScreen> {
               ),
             ),
 
-            SizedBox(
-              height: _height * 0.0492,
-            ),
+            // SizedBox(
+            //   height: _height * 0.0492,
+            // ),
+            const Spacer(),
 
             const EnableButton(
               text: '코드 백업하기',
             ),
 
-            SizedBox(
-              height: _height * 0.0704,
-            ),
+            // SizedBox(
+            //   height: _height * 0.0704,
+            // ),
+            const Spacer(),
           ],
         ),
       ),
