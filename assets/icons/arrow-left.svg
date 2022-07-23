@@ -1,1 +1,6 @@
-<svg viewBox="17.0 57.0 10.0 18.0" ><path transform="translate(17.0, 57.0)" d="M 10 0 L 0 9" fill="none" stroke="#808088" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" /><path transform="translate(17.0, 66.0)" d="M 10 9 L 0 0" fill="none" stroke="#808088" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" /></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="11.412" height="19.412" viewBox="0 0 11.412 19.412">
+  <g id="그룹_1481" data-name="그룹 1481" transform="translate(-16.294 -56.294)">
+    <line id="선_169" data-name="선 169" x1="10" y2="9" transform="translate(17 57)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1"/>
+    <line id="선_170" data-name="선 170" x1="10" y1="9" transform="translate(17 66)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1"/>
+  </g>
+</svg>

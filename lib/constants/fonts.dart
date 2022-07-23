@@ -29,6 +29,13 @@ TextStyle kTsRoboto18 = GoogleFonts.roboto(
   ),
 );
 
+TextStyle kTsRoboto18Mnemonic = GoogleFonts.roboto(
+  textStyle: const TextStyle(
+    fontSize: 18.0,
+    height: 1.39,
+  ),
+);
+
 TextStyle kTsRoboto22 = GoogleFonts.roboto(
   textStyle: const TextStyle(
     fontSize: 22,
@@ -90,6 +97,13 @@ TextStyle kTsNoto18 = const TextStyle(
   color: kColorBlack7,
   letterSpacing: -0.9,
   height: 1.22,
+);
+
+TextStyle kTsNoto15 = const TextStyle(
+  fontFamily: 'Noto Sans CJK KR',
+  fontSize: 15.0,
+  color: kColorBlack7,
+  letterSpacing: -0.6,
 );
 
 TextStyle kTsNoto16 = const TextStyle(

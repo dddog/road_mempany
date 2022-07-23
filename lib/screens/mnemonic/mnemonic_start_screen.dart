@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:road_mempany/constants/fonts.dart';
+import 'package:road_mempany/utils/widget_util.dart';
 
 import '../../constants/colors.dart';
 import '../../utils/util.dart';
+import 'mnemonic_code_screen.dart';
 
 class MnemonicStartScreen extends StatefulWidget {
   const MnemonicStartScreen({Key? key}) : super(key: key);
@@ -68,18 +70,18 @@ class _MnemonicStartScreenState extends State<MnemonicStartScreen> {
               height: 44,
               color: kColorBlue9,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10,
-                        left: 16,
-                      ),
-                      child: Text(
-                        '지갑복원',
-                        style: kTsNoto18.copyWith(
-                          color: kColorWhite9,
-                        ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      top: 8,
+                      bottom: 8,
+                      right: 40,
+                    ),
+                    child: Text(
+                      '지갑복원',
+                      style: kTsNoto18.copyWith(
+                        color: kColorWhite9,
                       ),
                     ),
                   ),
@@ -88,11 +90,20 @@ class _MnemonicStartScreenState extends State<MnemonicStartScreen> {
                     height: 17,
                     color: kColorBlue6,
                   ),
-                  Expanded(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        createUpDownRoute(
+                          const MnemonicCodeScreen(),
+                        ),
+                      );
+                    },
                     child: Padding(
                       padding: const EdgeInsets.only(
-                        top: 10,
-                        left: 16,
+                        top: 8,
+                        bottom: 8,
+                        left: 40,
                       ),
                       child: Text(
                         '지갑생성',
